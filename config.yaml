@@ -1,4 +1,4 @@
-plugins: inline convert web fetchart embedart acousticbrainz beatport fromfilename bandcamp scrub
+plugins: inline convert web fetchart embedart acousticbrainz beatport fromfilename bandcamp scrub keyfinder
 
 convert:
     auto: no
@@ -23,9 +23,14 @@ fromfilename:
    auto: yes
 
 bandcamp:
-   lyrics: true
-   art: true
-   split_artist_title: true
+   lyrics: yes
+   art: yes
+   split_artist_title: yes
 
 scrub:
    auto: yes
+
+keyfinder:
+   auto: yes
+   bin: /usr/bin/keyfinder-cli
+   overwrite: yes
