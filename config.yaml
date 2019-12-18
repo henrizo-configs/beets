@@ -1,0 +1,31 @@
+plugins: inline convert web fetchart embedart acousticbrainz beatport fromfilename bandcamp scrub
+
+convert:
+    auto: no
+
+fetchart:
+    auto: yes
+    cautious: no
+    cover_names: cover front art album folder
+    sources: amazon itunes *
+
+embedart:
+    auto: yes
+    ifempty: no
+
+acousticbrainz:
+    auto: yes
+
+beatport:
+    auto: yes
+
+fromfilename:
+   auto: yes
+
+bandcamp:
+   lyrics: true
+   art: true
+   split_artist_title: true
+
+scrub:
+   auto: yes
